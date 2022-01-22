@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+         document.write("<br>");
+    }
+
+    function mostra(frase) {
+         document.write(frase);
+         pulaLinha();
+    }
+
+    var idadeMediaQuandoTemFilhos = 28;
+    var anoAtual = 2022; 
+
+    var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+    mostra("Foram "+ Math.round(quantidadeDeGeracoes) + " gerações de 1500 a 2022.");
+
+</script>

@@ -1,0 +1,47 @@
+Começaremos o nosso curso analisando a frase Dados em Informação. Grande parte do Business Intelligence se trata de transformar dados em informação. Chamamos de dados a matéria prima da informação - é quando o dado ganha determinadas características que gerarão uma interpretação ou conclusão acerca de algo.
+
+Na história do BI, veremos que essa conversão de dado para informação ocorre desde a época das cavernas. O homem primitivo observava as estrelas, o céu e o clima.Com base nas observações realizadas, algumas decisões eram tomadas, como o plantio de alguma cultura ou realização de uma caçada, por exemplo.
+
+Transformar dados em informação é algo natural do ser humano. Esse tipo de exemplo pode ser utilizado para vários aspectos da evolução humana, mas o foco deste curso é Business Intelligence aplicada a TI.
+
+##Anos de 1970
+
+Começamos a poder transformar grandes volumes de dados armazenados nos computadores em informação a partir dos anos 70. Isso ocorreu graças aos data access storage devices, chamados DASD's e SGBD's. Tratam-se de Sistemas de Gerenciamento de Dados, ou mais precisamente, nossos bancos de dados relacionais.
+
+Antes disso, a informação era armazenada em sequências de arquivos de texto que não possuíam uma intercomunicação entre si, o que tornava muito difícil buscar algo dentro da base de dados. Com o surgimento dos SGBD's, a extração de dados e sua transformação em informação se tornou tecnologicamente possível.
+
+##Anos de 1980
+
+A partir dos anos 80, com o início do surgimento dos PC's (personal computers) e micro computadores, o acesso ao dado passo a ser mais simples, principalmente para os executivos das empresas. Na segunda metade da década, as empresas começaram a fornecer micro computadores para seus funcionários executivos.
+
+Assim surgiram ferramentas, ainda primitivas, de organização, análise e compartilhamento de informações.
+
+Nessa mesma época, foram criadas as linguagens de programação que geraram programas que exibiam os dados de maneira organizada de forma mais acessível. Neste ponto, estamos falando de sistemas operacionais de texto, não chegamos ainda nas janelas, figuras e informações gráficas.
+
+##Anos de 1990
+
+No início dos anos 90, intensificou-se o uso dos micro computadores nas empresas e o surgimento dos sistemas operacionais mais visuais oferecidos pela Apple ou as primeiras versões Windows. Os executivos começaram a pensar em utilizar intensamente o computador para obtenção de relatórios para tomada de decisões.
+
+Nessa época, alguns estudiosos do ramo passaram a se dedicar ao estudo de uma ciência específica do fornecimento de informações gerenciais. No fim do ano de 1992 e início de 1993, *surgiram os primeiros conceitos de armazém de dados ou *data warehouse.
+
+A ideia era separar o processamento do computador para obter informação, do processamento para gerir o cotidiano da empresa.
+
+O termo Executive Information System (EIS), que traduzido para o português significa Sistema de Informações Gerenciais, foi utilizado pelo primeira vez em 1996. Neste período, surgiram diversas ferramentas dedicadas apenas a apresentar ao usuário informações baseadas em dados utilizando os primeiros conceitos de data warehouse.
+
+##Anos 2000
+
+A primeira década do século XXI, os anos 2000, a internet começou a ser massificada, e dados passaram a ser disponibilizados democraticamente - inclusive com os funcionários das empresas que passaram a ter acesso às ferramentas de EIS.
+
+A necessidade das empresas de possuir ferramentas mais robustas e mais complexas em seus modelos de negócio. Como os consumidores de informação passaram a exigir análises mais detalhadas e particulares do seu trabalho, as ferramentas evoluíram bastante.
+
+Assim, as IES começaram a ser chamadas de Business Intelligence, ou Inteligência de Negócio.
+
+##Atualidade
+
+O cenário que nós temos atualmente é de uma internet totalmente difundida entre a população mundial:
+
+as redes sociais armazenam em nuvens uma quantidade enorme de dados, principalmente aqueles ligados as práticas de consumo dos usuários.
+o universo do BI se expandiu enormemente.
+Antes limitados a dados internos das empresas, os analistas de sistemas de negócios das empresas necessitavam agora transformar os dados - não apenas os internos - em informações revelantes. Neste contexto, surgiu o termo big data e os bancos de dados não estruturados, já que a informação está navegando pela teia tecnológica e nem sempre é uma tabela com campos e registros bem definidos. Pense em textos, fotos e outras variedades de informação.
+
+Trabalhar com esse volume enorme de dados e transforma-los em informação faz parte hoje dos desafios do BI moderno.
