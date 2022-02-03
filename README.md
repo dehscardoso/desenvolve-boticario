@@ -1,4 +1,4 @@
-# Desenvolve 2022 do Grupo Boticário
+# Desenvolve 2022 - Grupo Boticário
 
 O programa Desenvolve, realizado pelo Grupo Boticário, busca reinventar o futuro das pessoas por meio da tecnologia, diminuindo a lacuna existente de gênero e raça no Brasil.
 
