@@ -1,0 +1,1 @@
+**Link do Relatório Final:** [Relatório - Curso BigQuery](https://datastudio.google.com/reporting/53945c06-dd15-4ba4-ab76-6e85131340b6)
