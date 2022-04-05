@@ -1,0 +1,38 @@
+<Schema name="SucosFrutas" description="Esquema dos Data Marts da empresa de Suco de Frutas">
+  <Dimension type="TimeDimension" visible="true" name="Tempo">
+    <Hierarchy name="Calendario" visible="true" hasAll="true" allMemberName="Total Calendario" allMemberCaption="Total Calend&#225;rio" primaryKey="id_tempo" caption="Calend&#225;rio">
+      <Table name="dim_tempo">
+      </Table>
+      <Level name="Ano" visible="true" column="Numero_Ano" type="String" uniqueMembers="false" levelType="TimeYears">
+      </Level>
+      <Level name="Semestre" visible="true" column="Numero_Semestre" nameColumn="Nome_Semestre" type="String" uniqueMembers="false" levelType="TimeHalfYears">
+      </Level>
+      <Level name="Trimestre" visible="true" column="Numero_Trimestre" nameColumn="Nome_Trimestre" type="String" uniqueMembers="false" levelType="TimeQuarters">
+      </Level>
+      <Level name="Mes" visible="true" column="Numero_Mes" nameColumn="Nome_Mes" type="String" uniqueMembers="false" levelType="TimeMonths" caption="M&#234;s">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="dmpresidencia" visible="true" description="DataMart da Presid&#234;ncia" cache="true" enabled="true">
+    <Table name="fato_presidencia" alias="">
+    </Table>
+    <DimensionUsage source="Tempo" name="Tempo" visible="false" foreignKey="ID_Tempo">
+    </DimensionUsage>
+    <Measure name="Faturamento" column="Faturamento" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Faturamento em R$" visible="true">
+    </Measure>
+    <Measure name="Custo de Frete" column="Custo_Frete" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Custo de Frete em R$" visible="true">
+    </Measure>
+    <Measure name="Custo Fixo" column="Custo_Fixo" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Custo Fixo em R$" visible="true">
+    </Measure>
+    <Measure name="Custo Variavel" column="Custo_Variavel" datatype="Numeric" formatString="#,###.00" aggregator="sum" caption="Custo Vari&#225;vel" description="Custo Variavel em R$" visible="true">
+    </Measure>
+    <Measure name="Imposto" column="Imposto" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Imposto em R$" visible="true">
+    </Measure>
+    <Measure name="Meta Custo" column="Meta_Custo" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Meta Custo em R$" visible="true">
+    </Measure>
+    <Measure name="Meta Faturamento" column="Meta_Faturamento" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Meta Faturamento em R$" visible="true">
+    </Measure>
+    <Measure name="Quantidade Vendida" column="Quantidade_Vendida" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Quantidade Vendida em Litros" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
