@@ -1,6 +1,6 @@
 <Schema name="SucosFrutas" description="Esquema dos Data Marts da empresa de Suco de Frutas">
   <Dimension type="TimeDimension" visible="true" name="Tempo">
-    <Hierarchy name="Calendario" visible="true" hasAll="true" allMemberName="Total Calendario" allMemberCaption="Total Calend&#225;rio" primaryKey="id_tempo" caption="Calend&#225;rio">
+    <Hierarchy name="Calendario" visible="true" hasAll="true" allMemberName="Total Calendario" allMemberCaption="Total Calendario" primaryKey="ID_Tempo" caption="Calendario">
       <Table name="dim_tempo">
       </Table>
       <Level name="Ano" visible="true" column="Numero_Ano" type="String" uniqueMembers="false" levelType="TimeYears">
@@ -9,14 +9,16 @@
       </Level>
       <Level name="Trimestre" visible="true" column="Numero_Trimestre" nameColumn="Nome_Trimestre" type="String" uniqueMembers="false" levelType="TimeQuarters">
       </Level>
-      <Level name="Mes" visible="true" column="Numero_Mes" nameColumn="Nome_Mes" type="String" uniqueMembers="false" levelType="TimeMonths" caption="M&#234;s">
+      <Level name="Mes" visible="true" column="Numero_Mes" nameColumn="Nome_Mes" type="String" uniqueMembers="false" levelType="TimeMonths">
       </Level>
     </Hierarchy>
   </Dimension>
   <Cube name="dmpresidencia" visible="true" description="DataMart da Presid&#234;ncia" cache="true" enabled="true">
-    <Table name="fato_presidencia" alias="">
+    <Table name="fato_presidencia">
     </Table>
-    <DimensionUsage source="Tempo" name="Tempo" visible="false" foreignKey="ID_Tempo">
+    <DimensionUsage source="Produto" name="Produto" visible="true" foreignKey="ID_Produto" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Tempo" name="Tempo" visible="true" foreignKey="ID_Tempo">
     </DimensionUsage>
     <Measure name="Faturamento" column="Faturamento" datatype="Numeric" formatString="#,###.00" aggregator="sum" description="Faturamento em R$" visible="true">
     </Measure>
